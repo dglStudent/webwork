@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overflow Examples</title>
+    <style>
+       .box {
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 2px;
+            float: left;
+        }
+        .box::first-line{
+            font-weight: bold;
+        }
+
+        #visible {
+            overflow: visible;
+        }
+        #hidden {
+            overflow: hidden;
+        }
+
+        #scroll {
+            overflow: scroll;
+        }
+
+        #auto {
+            overflow: auto;
+        }
+
+        #init {
+            overflow: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="visible" class="box">overflow:visible<br>
+        We are a company located in Essex, Vermont, dedicated to
+        making delicious chocolate and other treats. For our founder,
+        chocolatier Anne Ambrose, this means using only the finest
+        organic ingredients, incorporating a harmonious blend of rich
+        flavors and smooth textures.
+    </p>
+    <p id="hidden" class="box">overflow:hidden<br>
+        We are a company located in Essex, Vermont, dedicated to
+        making delicious chocolate and other treats. For our founder,
+        chocolatier Anne Ambrose, this means using only the finest
+        organic ingredients, incorporating a harmonious blend of rich
+        flavors and smooth textures.
+    </p>
+    <p id="scroll" class="box">overflow:scroll<br>We are a company located in Essex, Vermont, dedicated to
+        making delicious chocolate and other treats. For our founder,
+        chocolatier Anne Ambrose, this means using only the finest
+        organic ingredients, incorporating a harmonious blend of rich
+        flavors and smooth textures.
+    </p>
+    <p id="auto" class="box">overflow:auto<br>We are a company located in Essex, Vermont, dedicated to
+        making delicious chocolate and other treats. For our founder,
+        chocolatier Anne Ambrose, this means using only the finest
+        organic ingredients, incorporating a harmonious blend of rich
+        flavors and smooth textures.
+    </p>
+    <p id="init" class="box">overflow:initial<br>We are a company located in Essex, Vermont, dedicated to
+            making delicious chocolate and other treats. For our founder,
+            chocolatier Anne Ambrose, this means using only the finest
+            organic ingredients, incorporating a harmonious blend of rich
+            flavors and smooth textures.
+     </p>
+    
+</body>
+
+</html>
